@@ -64,9 +64,10 @@ let str = "Strive school is cool."
 let strive = "Strive"
 
 const checkFirstWord = function(str){ //startsWith method
+    let runTime = str.split(" ").shift().length
     strive = strive.split("")  // split string into array
     let stringArray = str.split("")
-    for(let i = 0; i <= str.split(" ").shift().length; i++){ // a loop to compare if the first 5 array elements are equal
+    for(let i = 0; i <= runTime - 1; i++){ // a loop to compare if the first 5 array elements are equal
         if (stringArray[i] === strive[i]){
             if (i === 5)
                 return true
@@ -78,7 +79,7 @@ const checkFirstWord = function(str){ //startsWith method
     } 
 }
 
-const strivify = (str) => (checkFirstWord(str)) ? str : "Strive " + str
+const strivify = (str) => checkFirstWord(str) ? str : "Strive " + str
 
 console.log(strivify(str))
 
@@ -92,15 +93,9 @@ console.log("\nEX. 6\n")
 
 const check3and7 = function(x){
     if (x % 3 === 0){
-        if (x % 7 === 0){
-            console.log(`${x} is a multiple of 3 and 7.`)
-        } else {
-            console.log(`${x} is a multiple of 3.`)
-        }
-    } else if (x % 7 === 0) {
-        console.log(`${x} is a multiple of 7.`)
+        x % 7 === 0 ? console.log(`${x} is a multiple of 3 and 7.`) : console.log(`${x} is a multiple of 3.`)
     } else {
-        console.log("Not a multiple of 3 or 7.")
+        x % 7 === 0 ? console.log(`${x} is a multiple of 7.`) : console.log("Not a multiple of 3 or 7.")
     }
 }
 
