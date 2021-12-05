@@ -103,6 +103,7 @@ check3and7(16)
 check3and7(15)
 check3and7(14)
 check3and7(21)
+check3and7(25)
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
