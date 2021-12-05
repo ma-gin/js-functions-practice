@@ -48,11 +48,9 @@ console.log(crazyDiff(20))
 */
 console.log("\nEX. 4\n")
 
-const boundary = function(n){
-    return ((n >= 20 && n <=100) || n === 400) ? true : false
-}
+const boundary = (n) => ((n >= 20 && n <=100) || n === 400) ? true : false
 
-console.log(boundary(50))
+console.log(boundary(100))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
