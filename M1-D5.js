@@ -39,14 +39,9 @@ console.log(crazySum(8, 5))
 */
 console.log("\nEX. 3\n")
 
-const crazyDiff = function(x){
-    result = (x <= 19) ? 19 - x : (x - 19)*3
-    return result
-}   
+const crazyDiff = (x) => (x <= 19) ? 19 - x : (x - 19) * 3
 
-console.log(crazyDiff(11))
-console.log(crazyDiff(19))
-console.log(crazyDiff(23))
+console.log(crazyDiff(20))
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
