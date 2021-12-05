@@ -60,7 +60,7 @@ console.log("\nEX. 5\n")
 
 // How to accept string only?
 
-let str = "Strive school is cool."
+let str = "dStrive school is cool.dd"
 let strive = "Strive"
 
 const checkFirstWord = function(str){ //startsWith method
@@ -95,10 +95,11 @@ const check3and7 = function(x){
     if (x % 3 === 0){
         x % 7 === 0 ? console.log(`${x} is a multiple of 3 and 7.`) : console.log(`${x} is a multiple of 3.`)
     } else {
-        x % 7 === 0 ? console.log(`${x} is a multiple of 7.`) : console.log("Not a multiple of 3 or 7.")
+        x % 7 === 0 ? console.log(`${x} is a multiple of 7.`) : console.log("${x} is not a multiple of 3 or 7.")
     }
 }
 
+check3and7(16)
 check3and7(15)
 check3and7(14)
 check3and7(21)
@@ -149,9 +150,9 @@ console.log(cutString(str))
 */
 console.log("\nEX. 10\n")
 
-const giveMeRandom = function(n){
+const giveMeRandom = (n) => {
     let newArray = []
-    for (let i = 0; i <= n - 1; i++){
+    for (let i = 0; i < n; i++){
         number = Math.ceil(Math.random() * 10)
         newArray = [number].concat(newArray)
     }
