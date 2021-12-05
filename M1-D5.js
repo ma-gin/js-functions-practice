@@ -17,9 +17,7 @@ console.log("\nEX. 1\n")
 //     return l1 * l2
 // }
 
-const area = (l1, l2) => {
-    return l1 * l2
-}
+const area = (l1, l2) => l1 * l2
 
 console.log(area(5, 7))
 
@@ -30,16 +28,9 @@ console.log(area(5, 7))
 */
 console.log("\nEX. 2\n")
 
-let integerOne = 5
-let integerTwo = 5
-let result
+const crazySum = (numOne, numTwo) => (numOne === numTwo) ? (numOne + numTwo) * 3 : (numOne + numTwo)
 
-const crazySum = function(x, y){
-    result = (x === y) ? (x + y)*3 : (x + y)
-    return result
-}
-
-console.log(crazySum(integerOne, integerTwo))
+console.log(crazySum(8, 5))
 
 
 /* EXERCISE 3
