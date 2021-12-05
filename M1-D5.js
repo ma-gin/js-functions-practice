@@ -59,14 +59,15 @@ console.log(boundary(100))
 console.log("\nEX. 5\n")
 
 // How to accept string only?
-let str = "strive school is cool."
+
+let str = "Strive school is cool."
 let strive = "Strive"
 
-const checkFirstWord = function(str){
+const checkFirstWord = function(str){ //startsWith method
     strive = strive.split("")  // split string into array
-    str = str.split("")
-    for(let i = 0; i <= 5; i++){ // a loop to compare if the first 5 array elements are equal
-        if (str[i] === strive[i]){
+    let stringArray = str.split("")
+    for(let i = 0; i <= str.split(" ").shift().length; i++){ // a loop to compare if the first 5 array elements are equal
+        if (stringArray[i] === strive[i]){
             if (i === 5)
                 return true
             else
@@ -77,13 +78,7 @@ const checkFirstWord = function(str){
     } 
 }
 
-const strivify = function(str){
-    if (checkFirstWord(str)){
-        return str
-    } else {
-        return "Strive " + str
-    }
-}
+const strivify = (str) => (checkFirstWord(str)) ? str : "Strive " + str
 
 console.log(strivify(str))
 
@@ -145,8 +140,6 @@ const upperFirst = function(str){
 }
 
 console.log(upperFirst(str))
-
-// Naming parameters? Go through again.
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
