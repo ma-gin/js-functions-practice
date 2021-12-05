@@ -13,8 +13,12 @@ ASSIGNMENT RULES
 */
 console.log("\nEX. 1\n")
 
-const area = function(x, y){
-    return x*y
+// const area = function(l1, l2){
+//     return l1 * l2
+// }
+
+const area = (l1, l2) => {
+    return l1 * l2
 }
 
 console.log(area(5, 7))
