@@ -108,9 +108,7 @@ check3and7(21)
 */
 console.log("\nEX. 7\n")
 
-const reverseString = function(str){
-    return str.split("").reverse().join("");
-}
+const reverseString = (str) => str.split("").reverse().join("")
 
 console.log(reverseString(str))
 
@@ -119,9 +117,8 @@ console.log(reverseString(str))
 */
 console.log("\nEX. 8\n")
 
-result = []
-
 const upperFirst = function(str){
+    let result = []
     let arrayOfWords = str.split(" ") //create array of words
     let runTime = arrayOfWords.length - 1
     for (let i = 0; i <= runTime; i++){ //return array with capital last word added
@@ -136,16 +133,14 @@ const upperFirst = function(str){
 
 console.log(upperFirst(str))
 
+//comment each key decision during development
+
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 console.log("\nEX. 9\n")
 
-
-const cutString = function(str){
-    str = str.slice(1, -1)
-    return str
-}
+const cutString = (str) => str.slice(1, -1)
 
 console.log(cutString(str))
 
